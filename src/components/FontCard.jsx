@@ -6,9 +6,11 @@ function FontCard({ font, flipped, showResult, isCorrect }) {
     <div className={`card-container ${flipped ? 'flipped' : ''}`}>
       <div className="card-inner">
         <div className="card-front">
-          <div className="font-letter" style={{ fontFamily: font.name }}>
-            {font.letter}
-          </div>
+          <img 
+            src={font.image} 
+            alt={font.name}
+            className="font-image"
+          />
         </div>
         <div className="card-back">
           <h3 className="font-name">{font.name}</h3>

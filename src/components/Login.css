@@ -3,40 +3,37 @@
 }
 
 .btn-login {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  border: none;
-  color: white;
-  padding: 0.5rem 1.5rem;
-  border-radius: 20px;
-  cursor: pointer;
-  font-size: 0.9rem;
+  background: var(--primary);
+  color: var(--primary-foreground);
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius);
+  font-size: 0.875rem;
   font-weight: 500;
-  transition: all 0.3s ease;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease;
+  border: none;
 }
 
 .btn-login:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  opacity: 0.9;
 }
 
 .login-menu {
   position: absolute;
-  top: calc(100% + 10px);
+  top: calc(100% + 0.5rem);
   right: 0;
-  background: white;
-  border-radius: 12px;
-  padding: 1rem;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 0.5rem;
   min-width: 200px;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
-  z-index: 1000;
-  animation: slideDown 0.3s ease;
+  z-index: 50;
+  animation: slideDown 0.15s ease;
 }
 
 @keyframes slideDown {
   from {
     opacity: 0;
-    transform: translateY(-10px);
+    transform: translateY(-4px);
   }
   to {
     opacity: 1;
@@ -45,11 +42,12 @@
 }
 
 .login-header {
-  color: #333;
-  font-size: 0.85rem;
-  margin-bottom: 0.75rem;
-  text-align: center;
+  color: var(--muted-foreground);
+  font-size: 0.75rem;
   font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.5rem 0.75rem;
 }
 
 .btn-provider {
@@ -57,14 +55,16 @@
   display: flex;
   align-items: center;
   gap: 0.75rem;
-  padding: 0.75rem 1rem;
-  margin-bottom: 0.5rem;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  font-size: 0.9rem;
+  padding: 0.625rem 0.75rem;
+  margin-bottom: 0.25rem;
+  border-radius: var(--radius);
+  font-size: 0.875rem;
+  font-weight: 500;
   transition: all 0.2s ease;
-  background: #f5f5f5;
+  background: transparent;
+  color: var(--foreground);
+  border: none;
+  text-align: left;
 }
 
 .btn-provider:last-child {
@@ -72,23 +72,24 @@
 }
 
 .btn-provider:hover:not(:disabled) {
-  transform: translateX(5px);
+  background: var(--accent);
+  color: var(--accent-foreground);
 }
 
 .btn-provider:disabled {
-  opacity: 0.6;
+  opacity: 0.5;
   cursor: not-allowed;
 }
 
 .provider-icon {
-  width: 32px;
-  height: 32px;
+  width: 1.25rem;
+  height: 1.25rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 50%;
-  font-weight: bold;
-  font-size: 0.9rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 600;
   color: white;
 }
 
@@ -105,12 +106,12 @@
 }
 
 .btn-github .provider-icon {
-  background: #333;
+  background: var(--primary);
 }
 
 @media (max-width: 768px) {
   .login-menu {
-    right: -50px;
+    right: -0.5rem;
     min-width: 180px;
   }
 }

@@ -5,7 +5,7 @@ import './Leaderboard.css'
 function Leaderboard() {
   const [leaders, setLeaders] = useState([])
   const [loading, setLoading] = useState(true)
-  const [timeFilter, setTimeFilter] = useState('all') // 'all', 'week', 'month'
+  const [timeFilter, setTimeFilter] = useState('all')
 
   useEffect(() => {
     loadLeaderboard()
@@ -88,9 +88,9 @@ function Leaderboard() {
   ]
 
   const getMedal = (index) => {
-    if (index === 0) return '🥇'
-    if (index === 1) return '🥈'
-    if (index === 2) return '🥉'
+    if (index === 0) return '1'
+    if (index === 1) return '2'
+    if (index === 2) return '3'
     return null
   }
 
@@ -117,7 +117,7 @@ function Leaderboard() {
   return (
     <div className="leaderboard">
       <div className="leaderboard-container">
-        <h2 className="leaderboard-title">🏆 Таблица лидеров</h2>
+        <h2 className="leaderboard-title">Таблица лидеров</h2>
         
         <div className="leaderboard-filters">
           <button 

@@ -65,38 +65,58 @@ function Game({ user }) {
   }
 
   const generateAnswers = (correctFont) => {
-    const similarFonts = fontsData
-      .filter(f => 
-        f.id !== correctFont.id && 
-        (f.tags.type === correctFont.tags.type || 
-         f.tags.style === correctFont.tags.style)
-      )
-      .slice(0, 3)
-
-    const otherFonts = fontsData
-      .filter(f => 
-        f.id !== correctFont.id && 
-        f.tags.type !== correctFont.tags.type && 
-        f.tags.style !== correctFont.tags.style
-      )
-      .slice(0, 3 - similarFonts.length)
-
-    const distractors = [...similarFonts, ...otherFonts]
+    const availableFonts = fontsData.filter(f => f.id !== correctFont.id)
     
-    // Mix similar and different fonts based on round
-    let selectedDistractors
+    // Calculate similarity score for each font
+    const fontsWithSimilarity = availableFonts.map(font => {
+      let similarity = 0
+      if (font.tags.type === correctFont.tags.type) similarity += 1
+      if (font.tags.style === correctFont.tags.style) similarity += 1
+      
+      return { font, similarity }
+    })
+    
+    // Sort by similarity (most similar first)
+    fontsWithSimilarity.sort((a, b) => b.similarity - a.similarity)
+    
+    // Determine how many similar fonts to include based on round
+    let similarCount
     if (currentRound <= 7) {
-      // Early rounds: more different fonts
-      selectedDistractors = otherFonts.slice(0, 3)
+      similarCount = 0 // Early rounds: mostly different
     } else if (currentRound <= 14) {
-      // Middle rounds: mix
-      selectedDistractors = [...similarFonts.slice(0, 2), ...otherFonts.slice(0, 1)]
+      similarCount = 1 // Middle rounds: some similar
     } else {
-      // Late rounds: more similar fonts
-      selectedDistractors = [...similarFonts.slice(0, 2), ...otherFonts.slice(0, 1)]
+      similarCount = 2 // Late rounds: more similar
     }
-
-    const allAnswers = [correctFont, ...selectedDistractors]
+    
+    // Select distractors
+    const similarDistractors = fontsWithSimilarity
+      .filter(item => item.similarity >= 1)
+      .slice(0, similarCount)
+      .map(item => item.font)
+    
+    const differentDistractors = fontsWithSimilarity
+      .filter(item => item.similarity === 0)
+      .slice(0, 3 - similarCount)
+      .map(item => item.font)
+    
+    // If we don't have enough fonts, fill from remaining
+    const remainingFonts = availableFonts.filter(f => 
+      !similarDistractors.includes(f) && 
+      !differentDistractors.includes(f)
+    )
+    
+    while (similarDistractors.length + differentDistractors.length < 3) {
+      if (remainingFonts.length > 0) {
+        const randomIndex = Math.floor(Math.random() * remainingFonts.length)
+        differentDistractors.push(remainingFonts[randomIndex])
+        remainingFonts.splice(randomIndex, 1)
+      } else {
+        break
+      }
+    }
+    
+    const allAnswers = [correctFont, ...similarDistractors, ...differentDistractors].slice(0, 4)
     return shuffleArray(allAnswers)
   }
 
@@ -206,15 +226,27 @@ function Game({ user }) {
           </p>
           <div className="game-features">
             <div className="feature">
-              <span className="feature-icon">🎯</span>
+              <svg className="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M12 6v6l4 2"/>
+              </svg>
               <span>20 раундов</span>
             </div>
             <div className="feature">
-              <span className="feature-icon">📈</span>
+              <svg className="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <polyline points="22 12 18 12 2 12 22"/>
+                <polyline points="16 6 12 12 12 18"/>
+              </svg>
               <span>Прогрессивная сложность</span>
             </div>
             <div className="feature">
-              <span className="feature-icon">🏆</span>
+              <svg className="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <path d="M6 9H4.5a2.5 2.5 0 0 1 0 5h2"/>
+                <path d="M18 9h-1.5a2.5 2.5 0 0 0-5 0h2"/>
+                <path d="M12 15.5A2.5 2.5 0 0 0 9.5 12 14 6.5 2.5 2.5 0 0 0-2.5 8z"/>
+                <path d="M12 6l2.5 2.5"/>
+                <path d="M9.5 8.5L7 11l5 2.5 5-2.5-2.5-5"/>
+              </svg>
               <span>Система рейтинга</span>
             </div>
           </div>

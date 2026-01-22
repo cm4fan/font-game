@@ -11,7 +11,8 @@
       "style": "трансформационная антиква",
       "characteristics": ["классический", "элегантный"]
     },
-    "letter": "A"
+    "letter": "A",
+    "image": "/fonts/times-new-roman.svg"
   },
   {
     "id": 2,
@@ -25,7 +26,8 @@
       "style": "неогротеск",
       "characteristics": ["минималистичный", "современный", "читаемый"]
     },
-    "letter": "A"
+    "letter": "A",
+    "image": "/fonts/helvetica.svg"
   },
   {
     "id": 3,
@@ -39,7 +41,8 @@
       "style": "старостильная антиква",
       "characteristics": ["классический", "элегантный", "исторический"]
     },
-    "letter": "A"
+    "letter": "A",
+    "image": "/fonts/garamond.svg"
   },
   {
     "id": 4,
@@ -53,7 +56,8 @@
       "style": "геометрический гротеск",
       "characteristics": ["геометрический", "современный", "модернистский"]
     },
-    "letter": "A"
+    "letter": "A",
+    "image": "/fonts/futura.svg"
   },
   {
     "id": 5,
@@ -67,7 +71,8 @@
       "style": "дидоне",
       "characteristics": ["элегантный", "контрастный", "роскошный"]
     },
-    "letter": "A"
+    "letter": "A",
+    "image": "/fonts/bodoni.svg"
   },
   {
     "id": 6,
@@ -81,7 +86,8 @@
       "style": "трансформационная антиква",
       "characteristics": ["читаемый", "современный", "экранный"]
     },
-    "letter": "A"
+    "letter": "A",
+    "image": "/fonts/georgia.svg"
   },
   {
     "id": 7,
@@ -95,7 +101,8 @@
       "style": "неогротеск",
       "characteristics": ["безопасный", "универсальный", "читаемый"]
     },
-    "letter": "A"
+    "letter": "A",
+    "image": "/fonts/arial.svg"
   },
   {
     "id": 8,
@@ -109,7 +116,8 @@
       "style": "старостильная антиква",
       "characteristics": ["каллиграфический", "классический", "академический"]
     },
-    "letter": "A"
+    "letter": "A",
+    "image": "/fonts/palatino.svg"
   },
   {
     "id": 9,
@@ -123,7 +131,8 @@
       "style": "американский гротеск",
       "characteristics": ["смелый", "рекламный", "заголовочный"]
     },
-    "letter": "A"
+    "letter": "A",
+    "image": "/fonts/franklin-gothic.svg"
   },
   {
     "id": 10,
@@ -137,7 +146,8 @@
       "style": "трансформационная антиква",
       "characteristics": ["элегантный", "исторический", "контрастный"]
     },
-    "letter": "A"
+    "letter": "A",
+    "image": "/fonts/baskerville.svg"
   },
   {
     "id": 11,
@@ -151,7 +161,8 @@
       "style": "гуманистический гротеск",
       "characteristics": ["гуманистический", "британский", "дружелюбный"]
     },
-    "letter": "A"
+    "letter": "A",
+    "image": "/fonts/gill-sans.svg"
   },
   {
     "id": 12,
@@ -165,7 +176,8 @@
       "style": "гуманистический гротеск",
       "characteristics": ["экранный", "современный", "уникальный"]
     },
-    "letter": "A"
+    "letter": "A",
+    "image": "/fonts/trebuchet-ms.svg"
   },
   {
     "id": 13,
@@ -179,7 +191,8 @@
       "style": "египетский",
       "characteristics": ["смелый", "рекламный", "мощный"]
     },
-    "letter": "A"
+    "letter": "A",
+    "image": "/fonts/rockwell.svg"
   },
   {
     "id": 14,
@@ -193,7 +206,8 @@
       "style": "гуманистический гротеск",
       "characteristics": ["элегантный", "уникальный", "классический"]
     },
-    "letter": "A"
+    "letter": "A",
+    "image": "/fonts/optima.svg"
   },
   {
     "id": 15,
@@ -207,7 +221,8 @@
       "style": "неогротеск",
       "characteristics": ["смелый", "экстремальный", "воздействующий"]
     },
-    "letter": "A"
+    "letter": "A",
+    "image": "/fonts/impact.svg"
   },
   {
     "id": 16,
@@ -221,7 +236,8 @@
       "style": "американский",
       "characteristics": ["игривый", "ретро", "дружелюбный"]
     },
-    "letter": "A"
+    "letter": "A",
+    "image": "/fonts/cooper-black.svg"
   },
   {
     "id": 17,
@@ -235,7 +251,8 @@
       "style": "дидоне",
       "characteristics": ["элегантный", "французский", "роскошный"]
     },
-    "letter": "A"
+    "letter": "A",
+    "image": "/fonts/didot.svg"
   },
   {
     "id": 18,
@@ -249,7 +266,8 @@
       "style": "геометрический гротеск",
       "characteristics": ["современный", "чистый", "геометрический"]
     },
-    "letter": "A"
+    "letter": "A",
+    "image": "/fonts/century-gothic.svg"
   },
   {
     "id": 19,
@@ -263,7 +281,8 @@
       "style": "моноширинный",
       "characteristics": ["технический", "классический", "моноширинный"]
     },
-    "letter": "A"
+    "letter": "A",
+    "image": "/fonts/courier-new.svg"
   },
   {
     "id": 20,
@@ -277,6 +296,7 @@
       "style": "американский",
       "characteristics": ["элегантный", "официальный", "классический"]
     },
-    "letter": "A"
+    "letter": "A",
+    "image": "/fonts/copperplate.svg"
   }
 ]

@@ -1,6 +1,6 @@
 .game-container {
   width: 100%;
-  max-width: 800px;
+  max-width: 700px;
   margin: 0 auto;
 }
 
@@ -12,47 +12,33 @@
 }
 
 .game-intro {
-  background: rgba(255, 255, 255, 0.95);
-  padding: 3rem;
-  border-radius: 20px;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 2.5rem;
   text-align: center;
-  max-width: 500px;
-  animation: fadeInUp 0.5s ease;
-}
-
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  max-width: 450px;
 }
 
 .game-title {
-  color: #333;
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--foreground);
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.025em;
 }
 
 .game-description {
-  color: #666;
-  font-size: 1.1rem;
+  color: var(--muted-foreground);
+  font-size: 0.9375rem;
   line-height: 1.6;
   margin-bottom: 2rem;
 }
 
 .game-features {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
   margin-bottom: 2rem;
 }
 
@@ -61,170 +47,160 @@
   flex-direction: column;
   align-items: center;
   gap: 0.5rem;
+  padding: 1rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--background);
 }
 
 .feature-icon {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .feature span:last-child {
-  color: #666;
-  font-size: 0.9rem;
+  color: var(--muted-foreground);
+  font-size: 0.875rem;
 }
 
 .best-score {
-  color: #666;
-  font-size: 1rem;
+  color: var(--muted-foreground);
+  font-size: 0.875rem;
   margin-bottom: 1.5rem;
+  padding: 0.75rem 1rem;
+  background: var(--muted);
+  border-radius: var(--radius);
+  display: inline-block;
 }
 
 .score-value {
-  color: #764ba2;
-  font-weight: bold;
-  font-size: 1.2rem;
+  color: var(--foreground);
+  font-weight: 600;
 }
 
 .btn-start {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: var(--primary);
+  color: var(--primary-foreground);
+  padding: 0.75rem 2rem;
+  border-radius: var(--radius);
+  font-size: 0.9375rem;
+  font-weight: 500;
   border: none;
-  color: white;
-  padding: 1rem 3rem;
-  border-radius: 30px;
-  font-size: 1.1rem;
-  font-weight: bold;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+  width: 100%;
 }
 
 .btn-start:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+  opacity: 0.9;
 }
 
 .game-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: rgba(255, 255, 255, 0.9);
-  padding: 1rem 2rem;
-  border-radius: 15px;
-  margin-bottom: 2rem;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 1.5rem;
 }
 
 .round-counter {
-  color: #333;
-  font-size: 1.2rem;
-  font-weight: bold;
+  color: var(--muted-foreground);
+  font-size: 0.875rem;
+  font-weight: 500;
 }
 
 .score-counter {
-  color: #764ba2;
-  font-size: 1.2rem;
-  font-weight: bold;
+  color: var(--foreground);
+  font-size: 0.875rem;
+  font-weight: 600;
 }
 
 .game-content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
+  gap: 1.5rem;
 }
 
 .question {
-  color: white;
-  font-size: 2rem;
-  font-weight: bold;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  color: var(--foreground);
+  font-size: 1.5rem;
+  font-weight: 600;
   text-align: center;
+  letter-spacing: -0.025em;
 }
 
 .answers-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
+  gap: 0.75rem;
   width: 100%;
-  max-width: 600px;
+  max-width: 500px;
 }
 
 .answer-btn {
-  background: rgba(255, 255, 255, 0.95);
-  border: 2px solid transparent;
-  padding: 1rem 1.5rem;
-  border-radius: 12px;
-  font-size: 1rem;
+  background: var(--card);
+  border: 1px solid var(--border);
+  padding: 0.875rem 1.25rem;
+  border-radius: var(--radius);
+  font-size: 0.9375rem;
   font-weight: 500;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  color: var(--foreground);
+  transition: all 0.2s ease;
+  text-align: left;
 }
 
 .answer-btn:hover:not(:disabled) {
-  transform: translateY(-3px);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-  background: white;
+  background: var(--accent);
+  color: var(--accent-foreground);
+  border-color: var(--accent);
 }
 
 .answer-btn.selected {
-  border-color: #667eea;
-  background: #f0f4ff;
+  border-color: var(--primary);
+  background: var(--muted);
 }
 
 .answer-btn.revealed:disabled {
   cursor: not-allowed;
-  opacity: 0.7;
+  opacity: 0.6;
 }
 
 .btn-next {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: var(--primary);
+  color: var(--primary-foreground);
+  padding: 0.75rem 2rem;
+  border-radius: var(--radius);
+  font-size: 0.9375rem;
+  font-weight: 500;
   border: none;
-  color: white;
-  padding: 1rem 3rem;
-  border-radius: 30px;
-  font-size: 1.1rem;
-  font-weight: bold;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
-  animation: pulse 2s infinite;
 }
 
 .btn-next:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
-}
-
-@keyframes pulse {
-  0%, 100% {
-    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
-  }
-  50% {
-    box-shadow: 0 4px 25px rgba(102, 126, 234, 0.6);
-  }
+  opacity: 0.9;
 }
 
 @media (max-width: 768px) {
   .game-intro {
-    padding: 2rem;
+    padding: 2rem 1.5rem;
     margin: 1rem;
+    max-width: none;
   }
 
   .game-title {
-    font-size: 2rem;
+    font-size: 1.75rem;
   }
 
   .game-description {
-    font-size: 1rem;
+    font-size: 0.875rem;
   }
 
   .game-features {
-    flex-direction: column;
-    gap: 1rem;
+    grid-template-columns: 1fr;
   }
 
   .question {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
 
   .answers-grid {
@@ -232,6 +208,6 @@
   }
 
   .answer-btn {
-    padding: 0.875rem 1.25rem;
+    padding: 0.75rem 1rem;
   }
 }
