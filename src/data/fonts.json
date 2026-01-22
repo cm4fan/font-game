@@ -1,0 +1,282 @@
+[
+  {
+    "id": 1,
+    "name": "Times New Roman",
+    "year": 1931,
+    "author": "Stanley Morison, Victor Lardent",
+    "description": "Классическая антиква с засечками, созданная для газеты The Times. Один из самых узнаваемых шрифтов в мире.",
+    "links": ["https://en.wikipedia.org/wiki/Times_New_Roman"],
+    "tags": {
+      "type": "антиква",
+      "style": "трансформационная антиква",
+      "characteristics": ["классический", "элегантный"]
+    },
+    "letter": "A"
+  },
+  {
+    "id": 2,
+    "name": "Helvetica",
+    "year": 1957,
+    "author": "Max Miedinger, Eduard Hoffmann",
+    "description": "Легендарный неогротеск, ставший стандартом для современного дизайна. Отличается четкостью и нейтральностью.",
+    "links": ["https://en.wikipedia.org/wiki/Helvetica"],
+    "tags": {
+      "type": "гротеск",
+      "style": "неогротеск",
+      "characteristics": ["минималистичный", "современный", "читаемый"]
+    },
+    "letter": "A"
+  },
+  {
+    "id": 3,
+    "name": "Garamond",
+    "year": 1530,
+    "author": "Claude Garamond",
+    "description": "Один из старейших и самых элегантных шрифтов антиквы. Характеризуется мягкими засечками и прекрасной читаемостью.",
+    "links": ["https://en.wikipedia.org/wiki/Garamond"],
+    "tags": {
+      "type": "антиква",
+      "style": "старостильная антиква",
+      "characteristics": ["классический", "элегантный", "исторический"]
+    },
+    "letter": "A"
+  },
+  {
+    "id": 4,
+    "name": "Futura",
+    "year": 1927,
+    "author": "Paul Renner",
+    "description": "Геометрический гротеск с чистыми линиями и формами. Вдохновлен баухаусом и модернизмом.",
+    "links": ["https://en.wikipedia.org/wiki/Futura_(typeface)"],
+    "tags": {
+      "type": "гротеск",
+      "style": "геометрический гротеск",
+      "characteristics": ["геометрический", "современный", "модернистский"]
+    },
+    "letter": "A"
+  },
+  {
+    "id": 5,
+    "name": "Bodoni",
+    "year": 1780,
+    "author": "Giambattista Bodoni",
+    "description": "Дидоне с экстремальным контрастом между толстыми и тонкими штрихами. Ассоциируется с высокой модой и роскошью.",
+    "links": ["https://en.wikipedia.org/wiki/Bodoni"],
+    "tags": {
+      "type": "антиква",
+      "style": "дидоне",
+      "characteristics": ["элегантный", "контрастный", "роскошный"]
+    },
+    "letter": "A"
+  },
+  {
+    "id": 6,
+    "name": "Georgia",
+    "year": 1993,
+    "author": "Matthew Carter",
+    "description": "Создана для чтения на экране. Менее формальная, чем Times New Roman, но с отличной читаемостью.",
+    "links": ["https://en.wikipedia.org/wiki/Georgia_(typeface)"],
+    "tags": {
+      "type": "антиква",
+      "style": "трансформационная антиква",
+      "characteristics": ["читаемый", "современный", "экранный"]
+    },
+    "letter": "A"
+  },
+  {
+    "id": 7,
+    "name": "Arial",
+    "year": 1982,
+    "author": "Robin Nicholas, Patricia Saunders",
+    "description": "Безопасная альтернатива Helvetica с небольшими различиями в деталях. Широко используется в печати и интернете.",
+    "links": ["https://en.wikipedia.org/wiki/Arial"],
+    "tags": {
+      "type": "гротеск",
+      "style": "неогротеск",
+      "characteristics": ["безопасный", "универсальный", "читаемый"]
+    },
+    "letter": "A"
+  },
+  {
+    "id": 8,
+    "name": "Palatino",
+    "year": 1950,
+    "author": "Hermann Zapf",
+    "description": "Старостильная антиква с каллиграфическим характером. Часто используется в книгах и академических публикациях.",
+    "links": ["https://en.wikipedia.org/wiki/Palatino"],
+    "tags": {
+      "type": "антиква",
+      "style": "старостильная антиква",
+      "characteristics": ["каллиграфический", "классический", "академический"]
+    },
+    "letter": "A"
+  },
+  {
+    "id": 9,
+    "name": "Franklin Gothic",
+    "year": 1902,
+    "author": "Morris Fuller Benton",
+    "description": "Американский гротеск с плотным начертанием. Идеально подходит для заголовков и рекламы.",
+    "links": ["https://en.wikipedia.org/wiki/Franklin_Gothic"],
+    "tags": {
+      "type": "гротеск",
+      "style": "американский гротеск",
+      "characteristics": ["смелый", "рекламный", "заголовочный"]
+    },
+    "letter": "A"
+  },
+  {
+    "id": 10,
+    "name": "Baskerville",
+    "year": 1757,
+    "author": "John Baskerville",
+    "description": "Трансформационная антиква с высокой контрастностью и острыми засечками. Влиятельный шрифт XVIII века.",
+    "links": ["https://en.wikipedia.org/wiki/Baskerville"],
+    "tags": {
+      "type": "антиква",
+      "style": "трансформационная антиква",
+      "characteristics": ["элегантный", "исторический", "контрастный"]
+    },
+    "letter": "A"
+  },
+  {
+    "id": 11,
+    "name": "Gill Sans",
+    "year": 1928,
+    "author": "Eric Gill",
+    "description": "Гуманистический гротеск с элементами антиквы. Часто используется в британском дизайне.",
+    "links": ["https://en.wikipedia.org/wiki/Gill_Sans"],
+    "tags": {
+      "type": "гротеск",
+      "style": "гуманистический гротеск",
+      "characteristics": ["гуманистический", "британский", "дружелюбный"]
+    },
+    "letter": "A"
+  },
+  {
+    "id": 12,
+    "name": "Trebuchet MS",
+    "year": 1996,
+    "author": "Vincent Connare",
+    "description": "Гуманистический гротеск, созданный для Microsoft. Отличается необычным характером и читаемостью.",
+    "links": ["https://en.wikipedia.org/wiki/Trebuchet_MS"],
+    "tags": {
+      "type": "гротеск",
+      "style": "гуманистический гротеск",
+      "characteristics": ["экранный", "современный", "уникальный"]
+    },
+    "letter": "A"
+  },
+  {
+    "id": 13,
+    "name": "Rockwell",
+    "year": 1934,
+    "author": "Frank Hinman Pierpont",
+    "description": "Брусковый шрифт (slab serif) с квадратными засечками. Популярен в рекламе и заголовках.",
+    "links": ["https://en.wikipedia.org/wiki/Rockwell_(typeface)"],
+    "tags": {
+      "type": "брусковый",
+      "style": "египетский",
+      "characteristics": ["смелый", "рекламный", "мощный"]
+    },
+    "letter": "A"
+  },
+  {
+    "id": 14,
+    "name": "Optima",
+    "year": 1958,
+    "author": "Hermann Zapf",
+    "description": "Беззасечковый шрифт с вариативной толщиной штрихов. Напоминает классические итальянские шрифты.",
+    "links": ["https://en.wikipedia.org/wiki/Optima"],
+    "tags": {
+      "type": "гротеск",
+      "style": "гуманистический гротеск",
+      "characteristics": ["элегантный", "уникальный", "классический"]
+    },
+    "letter": "A"
+  },
+  {
+    "id": 15,
+    "name": "Impact",
+    "year": 1965,
+    "author": "Geoffrey Lee",
+    "description": "Ультра-жирный уплотненный гротеск. Создан для максимального визуального воздействия на ограниченном пространстве.",
+    "links": ["https://en.wikipedia.org/wiki/Impact_(typeface)"],
+    "tags": {
+      "type": "гротеск",
+      "style": "неогротеск",
+      "characteristics": ["смелый", "экстремальный", "воздействующий"]
+    },
+    "letter": "A"
+  },
+  {
+    "id": 16,
+    "name": "Cooper Black",
+    "year": 1922,
+    "author": "Oswald Bruce Cooper",
+    "description": "Жирный брусковый шрифт с округлыми формами. Популярен в ретро-дизайне и рекламе 60-70-х.",
+    "links": ["https://en.wikipedia.org/wiki/Cooper_Black"],
+    "tags": {
+      "type": "брусковый",
+      "style": "американский",
+      "characteristics": ["игривый", "ретро", "дружелюбный"]
+    },
+    "letter": "A"
+  },
+  {
+    "id": 17,
+    "name": "Didot",
+    "year": 1784,
+    "author": "Firmin Didot",
+    "description": "Французский дидоне с высокой контрастностью. Символ элегантности и высокой моды (Vogue, Harper's Bazaar).",
+    "links": ["https://en.wikipedia.org/wiki/Didot"],
+    "tags": {
+      "type": "антиква",
+      "style": "дидоне",
+      "characteristics": ["элегантный", "французский", "роскошный"]
+    },
+    "letter": "A"
+  },
+  {
+    "id": 18,
+    "name": "Century Gothic",
+    "year": 1990,
+    "author": "Monotype",
+    "description": "Геометрический гротеск в стиле Футуры. Чистый и современный шрифт для заголовков и презентаций.",
+    "links": ["https://en.wikipedia.org/wiki/Century_Gothic"],
+    "tags": {
+      "type": "гротеск",
+      "style": "геометрический гротеск",
+      "characteristics": ["современный", "чистый", "геометрический"]
+    },
+    "letter": "A"
+  },
+  {
+    "id": 19,
+    "name": "Courier New",
+    "year": 1955,
+    "author": "Howard Kettler",
+    "description": "Моноширинный шрифт на основе Courier. Стандарт для программирования и сценариев.",
+    "links": ["https://en.wikipedia.org/wiki/Courier_(typeface)"],
+    "tags": {
+      "type": "антиква",
+      "style": "моноширинный",
+      "characteristics": ["технический", "классический", "моноширинный"]
+    },
+    "letter": "A"
+  },
+  {
+    "id": 20,
+    "name": "Copperplate",
+    "year": 1901,
+    "author": "Frederic Goudy",
+    "description": "Все capitals шрифт с узнаваемым стилем. Часто используется для логотипов и приглашений.",
+    "links": ["https://en.wikipedia.org/wiki/Copperplate_Gothic"],
+    "tags": {
+      "type": "гротеск",
+      "style": "американский",
+      "characteristics": ["элегантный", "официальный", "классический"]
+    },
+    "letter": "A"
+  }
+]
